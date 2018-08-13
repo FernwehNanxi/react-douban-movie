@@ -1,0 +1,24 @@
+@import '../../../assets/style/common.scss';
+
+.tabbar-box{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgb(234,234,234);
+    .tabbar-item{
+        width: px2rem(180px);
+        text-align: center;
+        a{
+            color: rgb(184,184,184);
+            p{
+                margin-top: 0px;
+            }
+        }
+        .selected{
+            color: $green;
+        }
+    }
+}
