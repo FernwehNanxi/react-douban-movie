@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
+import List from '../../common/List';
 
 class Home extends Component{
     render(){
-        return(
-            <h1>HELLO HOME!</h1>
+        return (
+            <div class="home-box">
+                <List/>
+            </div>
         )
     }
 }
