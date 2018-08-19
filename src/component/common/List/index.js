@@ -1,11 +1,11 @@
-import react, {Component} from 'react';
+import React, {Component} from 'react';
 
 class List extends Component{
     render(){
         return(
             <div className="list-box">
                 {
-                    list.map((item,index)=>(
+                    this.props.list.map((item,index)=>(
                         <div className="list-item">
                             <img src={item.cover} alt={item.title}/>
                             <div className="list-item-con">
@@ -22,3 +22,5 @@ class List extends Component{
         )
     }
 }
+
+export default List;

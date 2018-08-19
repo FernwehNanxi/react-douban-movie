@@ -3,16 +3,16 @@ import axios from 'axios';
 let CancelToken=axios.CancelToken; //取消请求
 let cancelFlag=true;
 
-axios.default.timeout=20000；
+axios.default.timeout=20000;
 
 axios.interceptors.request.use(config=>{
 	if(cancelFlag){
 		cancelFlag=false;
 	}else{
 		cancelToken: new CancelToken(c=>{
-			cancel=c;
+			//cancel=c;
 		})
-		cancel();
+		//cancel();
 	}
 	return config
 },error=>{
