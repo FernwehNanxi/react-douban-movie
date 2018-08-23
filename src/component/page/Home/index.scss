@@ -1,0 +1,5 @@
+.home-box{
+	width: 100%;
+	$bottomHei: 80px;
+	height: calc(100% - #{$bottomHei});
+}
