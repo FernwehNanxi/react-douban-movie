@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import List from '../../common/List';
+import Search from '../../common/Search';
 import {playing} from '../../../api/api.js';
 import './index.scss';
 
@@ -11,7 +12,7 @@ class Home extends Component{
         }
     }
     componentDidMount(){
-        playing().then(res=>{
+        /*playing().then(res=>{
             console.log(res);
             res.subjects.map((item,index)=>{
                 let count=item['collect_count'];
@@ -20,11 +21,14 @@ class Home extends Component{
             this.setState({
                 homeList:res.subjects
             })
-        })
+        })*/
     }
     render(){
         return (
-            <div className="home-box">
+            <div className="home">
+                <div class="home-top">
+                    <Search placeholder="电影/电视剧/影人"></Search>
+                </div>
                 <List list={this.state.homeList}/>    
             </div>
         )
