@@ -3,11 +3,13 @@
 	flex:1;
 	border-radius: px2rem(6px);
 	background: rgb(245, 245, 245);
+	padding:px2rem(10px);
 	label{
 		width: 100%;
 		display: flex;
 		line-height: px2rem(40px);
 		.search-ico{
+			//padding-left: px2rem(10px);
 			margin-right: px2rem(4px);
 			font-size: px2rem(28px) !important;
 		}

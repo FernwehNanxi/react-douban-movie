@@ -18,13 +18,13 @@ class Tabbar extends Component{
         const tabList=[
             {
                 txt:'热映',
-                path:'/',
+                path:'/index',
                 ico_normal:'\ue643',
                 ico_active:'\ue645',
             },
             {
                 txt:'找片',
-                path:'movie',
+                path:'/movie',
                 ico_normal:'\ue609',
                 ico_active:'\ue646',
             },

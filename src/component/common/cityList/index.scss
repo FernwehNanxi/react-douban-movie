@@ -1,0 +1,48 @@
+@import '../../../assets/style/common.scss';
+
+.city-list-box{
+	margin-right:px2rem(40px);
+	.word{
+		position:fixed;
+		top: 50%;
+		right: 6px;
+		transform:translateY(-50%);
+		z-index:12;
+		p{
+			margin-bottom: px2rem(5px);
+			font-size: px2rem(16px);
+			color: rgb(0, 145, 253);
+			&:last-child{
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.city-list{
+		.city-item{
+			margin-bottom:px2rem(10px);
+			.item-word{
+				padding-left:px2rem(10px);
+				margin:{
+					bottom:px2rem(10px);
+
+				}
+				font-size:px2rem(16px);
+				color: rgb(171, 171, 171);
+			}
+			.cityname-box{
+				background:#fff;
+				font-size:px2rem(24px);
+				padding:0 px2rem(10px);
+				border-radius:2px;
+				color:#333;
+				p{
+					border-bottom: 1px solid rgb(230, 230, 230);
+					padding:px2rem(18px) 0;
+					&:last-child{
+						border-bottom:none;
+					}
+				}
+			}
+		}
+	}
+}

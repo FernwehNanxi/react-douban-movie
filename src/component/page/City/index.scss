@@ -1,0 +1,12 @@
+@import '../../../assets/style/common.scss';
+
+.city{
+	background:rgb(244, 244, 244);
+	.search-box{
+		background:#fff;
+		padding:px2rem(30px) px2rem(15px);
+	}
+	.city-box{
+		margin-top:px2rem(20px);
+	}
+}
